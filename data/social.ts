@@ -9,25 +9,25 @@ export interface SocialLink {
     {
       id: "github",
       name: "GitHub",
-      url: "https://github.com/achyut21",
+      url: "https://github.com/shivanshudwivedi",
       icon: "github"
     },
     {
       id: "linkedin",
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/achyutkatiyar2103/",
+      url: "https://www.linkedin.com/in/shivanshudwivedi",
       icon: "linkedin"
     },
     {
       id: "email",
       name: "Email",
-      url: "mailto:achyutkatiyar21@gmail.com",
+      url: "mailto:shitanshri@gmail.com",
       icon: "mail"
     },
     {
       id: "phone",
       name: "Phone",
-      url: "tel:+18575766733",
+      url: "tel:+1-(860)-209-7055",
       icon: "phone"
     }
   ];

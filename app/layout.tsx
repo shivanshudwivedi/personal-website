@@ -3,28 +3,28 @@ import { ClientLayout } from "./client-layout";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Achyut Katiyar | Full Stack Developer",
-  description: "Full Stack Developer & Machine Learning Enthusiast with expertise in Next.js, React, and blockchain technologies.",
+  title: "Shivanshu Dwivedi | Software Engineer",
+  description: "Software Engineer & Machine Learning Engineer with expertise in building highly scalable products.",
   metadataBase: new URL("https://achyutkatiyar.com"),
   
   // Basic metadata
-  applicationName: "Achyut Katiyar Portfolio",
-  authors: [{ name: "Achyut Katiyar" }],
-  keywords: ["Full Stack Developer", "Web3", "Blockchain", "Next.js", "React", "Machine Learning"],
+  applicationName: "Shivanshu Dwivedi Portfolio",
+  authors: [{ name: "Shivanshu Dwivedi" }],
+  keywords: ["Software Engineer", "Yaaro", "Entrepreneur", "Python", "Machine Learning"],
   
   openGraph: {
     type: "website",
-    url: "https://achyutkatiyar.com",
-    title: "Achyut Katiyar | Full Stack Developer",
-    description: "Full Stack Developer & Blockchain and Machine Learning Enthusiast with expertise in Next.js, React, and blockchain technologies.",
-    siteName: "Achyut Katiyar",
+    url: "https://shivanshudwivedi.vercel.app",
+    title: "Shivanshu Dwivedi | Software Engineer",
+    description: "Software Engineer & Machine Learning Engineer with expertise in building highly scalable products.",
+    siteName: "Shivanshu Dwivedi",
     locale: "en_US",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Achyut Katiyar - Portfolio",
+        alt: "Shivanshu Dwivedi - Portfolio",
       },
     ],
   },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   
   alternates: {
-    canonical: "https://achyutkatiyar.com",
+    canonical: "https://shivanshudwivedi.vercel.app",
   },
 };
 

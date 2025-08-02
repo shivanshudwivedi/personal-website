@@ -13,149 +13,163 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "zenith",
-    title: "Zenith",
-    description: "A decentralized music application enabling artists to mint and sell their music as NFTs.",
-    longDescription: "Developed a decentralized music platform for artists to mint and sell NFTs with Solidity and IPFS, enabling transactions and faster monetization via Polygon. Implemented role-based access and interactive features like community hubs, increasing session duration substantially.",
-    technologies: ["Solidity", "Polygon", "Ethereum", "IPFS", "Next.js", "TypeScript", "TailwindCSS", "Smart Contracts", "Web3.js", "Blockchain"],
+    id: "techswipe",
+    title: "TechSwipe",
+    description: "A full-stack swiping app with ML-powered recommendations using Word2Vec and Epsilon-greedy algorithms on 70+ GB e-commerce dataset.",
+    longDescription: "Engineered a comprehensive swiping application that combines modern mobile development with advanced machine learning algorithms. The platform processes massive e-commerce datasets to provide intelligent product recommendations through sophisticated swiping interfaces.",
+    technologies: ["JavaScript", "Swift", "SwiftUI", "Node.js", "Express.js", "Firebase Firestore", "TensorFlow", "Word2Vec", "Machine Learning", "iOS Development"],
     achievements: [
-      "Built for 150+ artists to mint and sell NFTs with Solidity and IPFS",
-      "Enabled 300+ transactions and 30% faster monetization via Polygon",
-      "Implemented role-based access and interactive features like community hubs, increasing session duration by 65%",
-      "Eliminated third-party dependencies and automated royalty payouts, reducing overhead and platform latency by 30%"
+      "Engineered a full-stack swiping app with Node.js/Express backend and Firebase Firestore, achieving 35% faster server response on a 70+ GB dataset across 100+ collections",
+      "Implemented Word2Vec & Epsilon-greedy ML algorithms on Google Shopping data and drove UI optimizations via A/B tests with 1000+ users—increasing app interactions by 30%",
+      "Integrated eBay API and web-scraped Google Shopping data into a comprehensive 70+ GB database",
+      "Conducted A/B testing with 80+ users, optimizing the UI with SwiftUI and Firebase Authentication"
     ],
-    image: "/images/projects/zenith/zenith.jpg",
-    github: "https://github.com/achyut21/zenith",
-    liveUrl: "https://devfolio.co/projects/zenith-202e",
+    image: "/images/projects/TechSwipe.png",
+    github: "https://github.com/shivanshudwivedi/TechSwipe",
     featured: true
   },
   {
-    id: "pokearena",
-    title: "PokeArena",
-    description: "A blockchain-based platform digitizing Pokémon cards as NFTs with secure trading and battling features.",
-    longDescription: "Developed a blockchain-based platform digitizing 300+ Pokémon cards as NFTs, enabling secure trading and battling with on-chain verified ownership and battle logic. Integrated Aptos wallet authentication for seamless trades with real-time feedback.",
-    technologies: ["Move", "Aptos", "NFTs", "React", "TypeScript", "Node.js", "Express", "TailwindCSS", "Three.js", "MongoDB", "Blockchain"],
+    id: "ligo-analytics-pipeline",
+    title: "LIGO Real-time Analytics Pipeline",
+    description: "A high-performance streaming pipeline processing 100M+ daily seismic samples for gravitational wave detection with sub-second latency.",
+    longDescription: "Architected a cutting-edge real-time analytics pipeline for the LIGO Scientific Collaboration, processing massive volumes of seismic data to detect gravitational waves. The system achieves unprecedented performance in anomaly detection while maintaining extremely low latency.",
+    technologies: ["Apache Flink", "Kafka", "Python", "Kubernetes", "Wavelet Analysis", "UMAP", "XGBoost", "Prometheus", "Grafana", "Microservices"],
     achievements: [
-      "Developed a blockchain-based platform digitizing 300+ Pokémon cards as NFTs",
-      "Enabled secure trading and battling with on-chain verified ownership and battle logic",
-      "Integrated Aptos wallet authentication to ease 120+ NFT trades with real-time feedback",
-      "Crafted a pixel art-inspired UI/UX using TailwindCSS and Three.js, improving user engagement by 60%"
+      "Achieved sub-second end-to-end latency on 100M+ daily seismic samples by architecting a Kafka→Flink streaming pipeline on Kubernetes to ingest 24 vibration data channels",
+      "Boosted anomaly-detection accuracy by 20% and cut false-positives to under 1% by deploying Wavelet→UMAP→XGBoost models as microservices",
+      "Implemented comprehensive monitoring with Prometheus/Grafana and automated Slack alerts for proactive issue detection",
+      "Designed scalable architecture capable of handling massive scientific data streams in real-time"
     ],
-    image: "/images/projects/pokearena/pokearena.jpg",
-    github: "https://github.com/achyut21/pokearena",
+    image: "/images/projects/LIGO.png",
+    github: "https://github.com/shivanshudwivedi/LIGO",
     featured: true
   },
   {
-    id: "infinitus",
-    title: "Infinitus'24",
-    description: "Led the development of the Infinitus Fest website, attracting 20,000 students with 6,000 registrations.",
-    longDescription: "Led the development of the Infinitus Fest website, attracting 20,000 students with 6,000 registrations across 10 events, optimizing for crowd loading. Integrated payment gateway for Cultural and Technical events.",
-    technologies: ["Next.js", "Three.js", "TypeScript", "TailwindCSS", "Node.js", "Express", "MongoDB", "Razorpay", "Redux", "Framer Motion"],
+    id: "microkernel-os",
+    title: "Microkernel Operating System",
+    description: "A custom microkernel OS with preemptive multitasking, virtual memory management, and optimized context switching.",
+    longDescription: "Developed a complete microkernel operating system from scratch, implementing advanced OS concepts including preemptive multitasking, virtual memory management, and inter-process communication. The system demonstrates deep understanding of low-level system programming and computer architecture.",
+    technologies: ["C", "x86-64 Assembly", "QEMU", "Virtual Memory", "IPC", "Operating Systems", "System Programming"],
     achievements: [
-      "Attracted 20,000 students with 6,000 registrations across 10 events",
-      "Emphasized crowd loading optimization for seamless user experience",
-      "Integrated payment gateway for Cultural and Technical events"
+      "Engineered a microkernel supporting preemptive multitasking, round-robin scheduling, and IPC in C and x86-64 Assembly, optimizing context-switch overhead by 17%",
+      "Successfully running 8 concurrent user-space tasks on QEMU with robust process isolation",
+      "Built a demand-paged virtual memory manager with LRU page replacement and hardware-enforced process isolation",
+      "Reduced page faults by 37% and eliminated cross-process memory leaks through advanced memory management"
     ],
-    image: "/images/projects/infinitus/infinitus.jpg",
-    github: "https://github.com/achyut21/infinitus24",
-    featured: false
-  },
-  {
-    id: "lightning-time",
-    title: "Lightning Time",
-    description: "A Bitcoin Lightning Network-powered time tracking web app that allows users to check in for work and automatically receive payments in Satoshis.",
-    longDescription: "Developed during the MIT BITCOIN EXPO 2025 Hackathon, Lightning Time is a time tracking application that allows users to 'check in' to track their work hours and automatically receive Satoshi (SATs) payments for each hour worked. The app features real-time tracking, automatic Bitcoin payments via the Lightning Network, detailed analytics, and a responsive design for all devices.",
-    technologies: ["Bitcoin", "Lightning Network", "LNbits", "Soulbound Tokens", "React", "Vite", "Node.js", "Express", "TailwindCSS", "Ethers.js", "Blockchain"],
-    achievements: [
-      "Built a real-time time tracking system with automatic Bitcoin payments via Lightning Network",
-      "Implemented an admin dashboard for monitoring work time and payment statistics",
-      "Developed detailed analytics for visualizing earnings, work patterns, and payment history",
-      "Designed a future authentication system using Soulbound Tokens (SBTs) for secure admin access",
-      "Created a responsive design that works seamlessly across mobile, tablet, and desktop devices"
-    ],
-    image: "/images/projects/lightning-time/lightning-time.jpg",
-    github: "https://github.com/Achyut21/MIT-LIGHTING-APP",
-    liveUrl: "https://devpost.com/software/lightning-time",
+    image: "/images/projects/OS.png",
+    github: "https://github.com/shivanshu/Microkernel",
     featured: true
   },
   {
-    id: "billrewards",
-    title: "BillRewards",
-    description: "A cashback reward system that incentivizes on-time bill payments with cryptocurrency rewards.",
-    longDescription: "Built BillRewards, an innovative system that encourages timely bill payments by rewarding users with cryptocurrency tokens. The platform integrates with payment processors to track bill payments and automatically distributes rewards for on-time payments, helping service providers reduce late payments while offering users tangible benefits.",
-    technologies: ["Ethereum", "Solidity", "Smart Contracts", "Web3.js", "React", "Node.js", "Express", "MongoDB", "Tesseract.js", "OCR Technology", "Blockchain"],
+    id: "portfolio-risk-engine",
+    title: "Real-Time Portfolio Risk Engine",
+    description: "A high-performance hybrid Python/C++ engine computing portfolio VaR/CVaR in under 5ms for 100K+ positions.",
+    longDescription: "Built a sophisticated financial risk management system that combines the flexibility of Python with the performance of C++ to deliver ultra-low latency risk calculations for large-scale portfolios. The system enables real-time risk monitoring and decision-making in high-frequency trading environments.",
+    technologies: ["Python", "C++", "pybind11", "Intel TBB", "NumPy", "Pandas", "Monte Carlo", "Financial Modeling", "Quantitative Finance"],
     achievements: [
-      "Developed a smart contract-based reward system integrated with multiple payment processors",
-      "Created a token distribution mechanism that automatically rewards on-time payments",
-      "Implemented an analytics dashboard for tracking payment patterns and reward distributions",
-      "Built a secure wallet integration system for claiming and managing reward tokens"
+      "Computed portfolio VaR/CVaR in under 5ms for 100K+ positions by engineering a hybrid Python/C++ engine with pybind11 for low-latency risk calculations",
+      "Accelerated Monte-Carlo simulations by 70% by implementing multi-threaded execution with Intel TBB",
+      "Vectorized numerical operations in Pandas/NumPy for optimal performance in financial computations",
+      "Delivered enterprise-grade risk management capabilities for high-frequency trading applications"
     ],
-    image: "/images/projects/billrewards/billrewards.jpg",
-    github: "https://github.com/achyut21/billrewards",
-    liveUrl: "https://devpost.com/software/billrewards",
+    image: "/images/projects/Portfolio.png",
+    github: "https://github.com/yourusername/portfolio-risk-engine",
+    featured: true
+  },
+  {
+    id: "alpha-signal-generator",
+    title: "ML-Based Alpha Signal Generator",
+    description: "A high-frequency trading system achieving 62% directional accuracy with LSTM models and real-time FastAPI inference.",
+    longDescription: "Developed an advanced machine learning system for generating alpha signals in financial markets. The platform combines deep learning techniques with high-performance infrastructure to deliver real-time trading signals with exceptional accuracy and throughput.",
+    technologies: ["Python", "TensorFlow", "LSTM", "FastAPI", "NumPy", "High-Frequency Trading", "Financial ML", "Backtesting", "API Development"],
+    achievements: [
+      "Achieved 62% directional accuracy on next-bar return predictions by training and backtesting LSTM models on 5 years of high-frequency financial data",
+      "Delivered real-time alpha signals at over 50K requests/sec by deploying the model via a high-performance FastAPI inference service",
+      "Implemented comprehensive backtesting framework for model validation and performance analysis",
+      "Built scalable infrastructure for live trading signal generation and validation"
+    ],
+    image: "/images/projects/Alpha.png",
+    github: "https://github.com/yourusername/alpha-signal-generator",
+    featured: true
+  },
+  {
+    id: "gyan-ai",
+    title: "GYAN.AI",
+    description: "An inclusive educational platform leveraging OpenAI Whisper, GPT-4 Turbo, and fine-tuned Gemma models for students with disabilities.",
+    longDescription: "Developed at YHacks 2024, GYAN.AI revolutionizes education by creating an inclusive learning environment for students with disabilities. The platform integrates multiple cutting-edge AI models to provide comprehensive educational support through innovative accessibility features.",
+    technologies: ["OpenAI Whisper", "GPT-4 Turbo", "Google Gemma", "Facebook TTS", "DeepL", "Flask", "React", "Vite", "NextUI", "LangChain"],
+    achievements: [
+      "Created an innovative educational platform leveraging advanced AI models for inclusive learning environments",
+      "Integrated video-to-notes conversion, AI chatbot, summarization, and text-to-speech for comprehensive accessibility",
+      "Built using modern web technologies including Flask, React, Vite, and NextUI for optimal user experience",
+      "Revolutionized education accessibility by harnessing multiple AI technologies for disabled students"
+    ],
+    image: "/images/projects/GYAN.png",
+    github: "https://github.com/shivanshudwivedi/GYAN.AI",
+    featured: true
+  },
+  {
+    id: "whispertalk",
+    title: "WhisperTalk",
+    description: "A cloud-native social media application showcasing modern deployment with Docker, Kubernetes, and Google Cloud.",
+    longDescription: "A sophisticated social media platform that demonstrates state-of-the-art cloud deployment practices. The application combines Spring Boot's efficiency with modern containerization and orchestration technologies to deliver a scalable, resilient platform for social interaction.",
+    technologies: ["Spring Boot", "Docker", "Kubernetes", "Google Cloud", "REST API", "Swagger UI", "Microservices", "Cloud Native"],
+    achievements: [
+      "Leveraged Docker for containerization and Kubernetes for orchestration on Google Cloud Platform",
+      "Combined Spring Boot's efficiency with REST API connectivity and Swagger UI interactivity",
+      "Delivered a scalable, resilient platform for enhanced social interaction",
+      "Demonstrated modern cloud-native deployment practices and developer engagement tools"
+    ],
+    image: "/images/projects/WhisperTalk.webp",
+    github: "https://github.com/yourusername/whispertalk",
     featured: false
   },
   {
-    id: "byteroot",
-    title: "Byteroot",
-    description: "A coding ecosystem enabling users to post AI-validated questions and collaborate on solutions.",
-    longDescription: "Revolutionized the coding ecosystem by developing ByteRoot, enabling users to post AI-validated questions and create an ecosystem to solve those questions and have group discussions. Seamlessly integrated Piston API to fetch compiler outputs.",
-    technologies: ["OpenAI", "Next.js", "TypeScript", "Node.js", "Express", "PostgreSQL", "Docker", "TailwindCSS", "Prisma", "Redis", "JWT"],
+    id: "closebuy",
+    title: "CloseBuy: Helping Wallets and Environment",
+    description: "A Flutter-based campus marketplace with integrated Trinity College map for convenient student transactions.",
+    longDescription: "An innovative Android mobile application that creates a sustainable campus economy by enabling students to buy and sell items within Trinity College. The app's standout feature is the integration of the college map, making transactions convenient while promoting environmental sustainability through item recycling.",
+    technologies: ["Flutter", "Dart", "Google Maps API", "Firebase", "Android Development", "Mobile UI/UX"],
     achievements: [
-      "Created a platform for posting AI-validated coding questions",
-      "Built an ecosystem for collaborative problem-solving and group discussions",
-      "Integrated Piston API for compiler outputs, enhancing code execution by 40%"
+      "Developed a comprehensive campus marketplace using Flutter and Dart for Trinity College students",
+      "Integrated Trinity College's map for easy location-based transactions between users",
+      "Created a user-friendly interface that fosters a vibrant campus economy",
+      "Promoted sustainable practices by encouraging recycling and reuse of goods within the campus community"
     ],
-    image: "/images/projects/byteroot/byteroot.jpg",
-    github: "https://github.com/achyut21/byteroot",
+    image: "/images/projects/CloseBuy.webp",
+    github: "https://github.com/yourusername/closebuy",
     featured: false
   },
   {
-    id: "cryptovault-ipfs",
-    title: "CryptoVault IPFS",
-    description: "A decentralized backup and recovery system leveraging IPFS to securely store encrypted files.",
-    longDescription: "Developed a decentralized backup and recovery system that combines AES symmetric encryption with RSA digital signatures to ensure confidential and tamper-proof file storage on IPFS. The system allows users to encrypt files locally, store them securely, and retrieve them using unique CIDs with metadata.",
-    technologies: ["IPFS", "Helia", "AES-256-CBC", "RSA", "Cryptography", "Node.js", "Express", "React", "Vite", "Multer"],
+    id: "contacts-app",
+    title: "Interactive Contacts Application",
+    description: "A Java-based contacts management system utilizing Binary Search Tree for efficient data handling and dynamic user interactions.",
+    longDescription: "Developed an advanced contacts management application that demonstrates proficiency in data structures and algorithms. The system uses Binary Search Tree implementation for optimal performance in contact operations and includes comprehensive testing practices.",
+    technologies: ["Java", "Binary Search Tree", "Gradle", "JUnit", "Object-Oriented Design", "Data Structures", "Algorithms"],
     achievements: [
-      "Created a secure encryption system using AES-256-CBC for file encryption",
-      "Implemented RSA digital signatures for metadata integrity verification",
-      "Developed a user-friendly two-step recovery process for seamless file retrieval",
-      "Built a decentralized storage solution with complete privacy control"
+      "Implemented Binary Search Tree data structure for efficient contact storage and retrieval operations",
+      "Created dynamic user interfaces for contact addition, deletion, and search functionality",
+      "Performed comprehensive unit testing for each component using Gradle build system",
+      "Demonstrated advanced knowledge of data structures and object-oriented programming principles"
     ],
-    image: "/images/projects/cryptovault-ipfs/cryptovault-ipfs.webp",
-    github: "https://github.com/Achyut21/CVIPFS",
+    image: "/images/projects/contacts.png",
+    github: "https://github.com/yourusername/contacts-app",
     featured: false
   },
   {
-    id: "neunotes",
-    title: "NeuNotes",
-    description: "A comprehensive academic notes sharing platform facilitating knowledge exchange among students and faculty.",
-    longDescription: "Designed and developed NeuNotes, a collaborative platform for sharing academic content with role-based access control. The system features course organization, notes upload/preview, search functionality, ratings, comments, and analytics dashboards.",
-    technologies: ["MySQL", "React", "Vite", "Node.js", "Express", "TailwindCSS", "Zustand", "Axios", "Multer", "Bcrypt", "REST API"],
+    id: "java-texteditor",
+    title: "Java Text Editor",
+    description: "A feature-rich text editor built with dynamic data structures and algorithms for optimized text processing.",
+    longDescription: "Developed a comprehensive text editor application that showcases advanced Java programming skills and software engineering practices. The project emphasizes efficient text processing algorithms, object-oriented design principles, and thorough testing methodologies.",
+    technologies: ["Java", "Dynamic Data Structures", "Algorithms", "Gradle", "JUnit", "Object-Oriented Design", "Software Testing"],
     achievements: [
-      "Built a comprehensive platform with role-based access for students, faculty, and admins",
-      "Implemented a sophisticated database structure with 12 tables, stored procedures, and triggers",
-      "Created a full-featured notes management system with ratings, comments, and favorites",
-      "Developed an intuitive UI for browsing, uploading, and managing academic content"
+      "Leveraged dynamic data structures and algorithms for optimized text processing performance",
+      "Showcased advanced skills in object-oriented design and software architecture",
+      "Implemented comprehensive unit testing framework using JUnit for reliable code quality",
+      "Built and tested using Gradle for professional development workflow and dependency management"
     ],
-    image: "/images/projects/neunotes/neunotes.webp",
-    github: "https://github.com/achyut21/neunotes",
-    featured: false
-  },
-  {
-    id: "noteit",
-    title: "NoteIT",
-    description: "A mobile app for sharing and accessing study notes and resources with social features and gamification.",
-    longDescription: "Developed NoteIT, an Android mobile application that allows students to share and access study notes and educational resources. The app features user authentication, PDF uploading/downloading, badge rewards for engagement, and an intuitive navigation system with fragments.",
-    technologies: ["Android Studio", "Java", "Firebase", "Material Design", "XML"],
-    achievements: [
-      "Created 9 activities and 4 fragments for comprehensive app functionality",
-      "Implemented secure user authentication and data storage with Firebase",
-      "Designed an engaging user interface with gamification elements like badges",
-      "Built a robust PDF upload and retrieval system for educational resources"
-    ],
-    image: "/images/projects/noteit/noteit.jpg",
-    github: "https://github.com/Achyut21/Note_IT-Note-sharing-APP-",
+    image: "/images/projects/text.png",
+    github: "https://github.com/yourusername/java-texteditor",
     featured: false
   }
 ];

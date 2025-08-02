@@ -1,11 +1,11 @@
 // data/skills.ts
 export type SkillCategory = 
-  | 'Languages' 
-  | 'Frameworks/Libraries' 
-  | 'ML/Data' 
-  | 'Blockchain/Web3' 
-  | 'Cloud/DevOps' 
-  | 'Concepts';
+  | 'Programming & Development' 
+  | 'ML & Data Science' 
+  | 'Quantitative Finance' 
+  | 'Cloud & Infrastructure'
+  | 'System Architecture' 
+  | 'Specialized Tools';
 
 export interface Skill {
   name: string;
@@ -14,75 +14,166 @@ export interface Skill {
 }
 
 export const skills: Record<SkillCategory, Skill[]> = {
-  'Languages': [
-    { name: 'C++', category: 'Languages', logoKey: 'cplusplus' },
-    { name: 'Java', category: 'Languages', logoKey: 'java' },
-    { name: 'Python', category: 'Languages', logoKey: 'python' },
-    { name: 'JavaScript', category: 'Languages', logoKey: 'javascript' },
-    { name: 'TypeScript', category: 'Languages', logoKey: 'typescript' },
-    { name: 'Dart', category: 'Languages', logoKey: 'dart' },
-    { name: 'Kotlin', category: 'Languages', logoKey: 'kotlin' },
-    { name: 'Solidity', category: 'Languages', logoKey: 'solidity' },
-    { name: 'SQL', category: 'Languages', logoKey: 'mysql' },
-    { name: 'Rust', category: 'Languages', logoKey: 'rust' },
-    { name: 'Go', category: 'Languages', logoKey: 'go' },
-    { name: 'Ruby', category: 'Languages', logoKey: 'ruby' },
-    { name: 'Swift', category: 'Languages', logoKey: 'swift' },
+  'Programming & Development': [
+    // Programming Languages
+    { name: 'Python', category: 'Programming & Development', logoKey: 'python' },
+    { name: 'C++', category: 'Programming & Development', logoKey: 'cplusplus' },
+    { name: 'Java', category: 'Programming & Development', logoKey: 'java' },
+    { name: 'JavaScript', category: 'Programming & Development', logoKey: 'javascript' },
+    { name: 'TypeScript', category: 'Programming & Development', logoKey: 'typescript' },
+    { name: 'Swift', category: 'Programming & Development', logoKey: 'swift' },
+    { name: 'C', category: 'Programming & Development', logoKey: 'c' },
+    { name: 'SQL', category: 'Programming & Development', logoKey: 'mysql' },
+    { name: 'x86-64 Assembly', category: 'Programming & Development', logoKey: 'cplusplus' },
+    { name: 'Kotlin', category: 'Programming & Development', logoKey: 'kotlin' },
+    // Frameworks & Libraries
+    { name: 'Spring Boot', category: 'Programming & Development', logoKey: 'spring' },
+    { name: 'Flask', category: 'Programming & Development', logoKey: 'flask' },
+    { name: 'FastAPI', category: 'Programming & Development', logoKey: 'python' },
+    { name: 'Express.js', category: 'Programming & Development', logoKey: 'express' },
+    { name: 'Node.js', category: 'Programming & Development', logoKey: 'nodejs' },
+    { name: 'React.js', category: 'Programming & Development', logoKey: 'react' },
+    { name: 'Next.js', category: 'Programming & Development', logoKey: 'nextjs' },
+    { name: 'React Native', category: 'Programming & Development', logoKey: 'react' },
+    { name: 'SwiftUI', category: 'Programming & Development', logoKey: 'swift' },
+    { name: 'Flutter', category: 'Programming & Development', logoKey: 'flutter' },
+    { name: 'Django', category: 'Programming & Development', logoKey: 'django' },
+    { name: 'Vue.js', category: 'Programming & Development', logoKey: 'vuejs' },
+    { name: 'Angular', category: 'Programming & Development', logoKey: 'angularjs' },
+    { name: 'Tailwind CSS', category: 'Programming & Development', logoKey: 'tailwindcss' },
+    { name: 'Three.js', category: 'Programming & Development', logoKey: 'threejs' },
   ],
-  'Frameworks/Libraries': [
-    { name: 'React.js', category: 'Frameworks/Libraries', logoKey: 'react' },
-    { name: 'Node.js', category: 'Frameworks/Libraries', logoKey: 'nodejs' },
-    { name: 'Next.js', category: 'Frameworks/Libraries', logoKey: 'nextjs' },
-    { name: 'Flask', category: 'Frameworks/Libraries', logoKey: 'flask' },
-    { name: 'Express.js', category: 'Frameworks/Libraries', logoKey: 'express' },
-    { name: 'Tailwind CSS', category: 'Frameworks/Libraries', logoKey: 'tailwindcss' },
-    { name: 'Android SDK', category: 'Frameworks/Libraries', logoKey: 'android' },
-    { name: 'Three.js', category: 'Frameworks/Libraries', logoKey: 'threejs' },
-    { name: 'Vue.js', category: 'Frameworks/Libraries', logoKey: 'vuejs' },
-    { name: 'Angular', category: 'Frameworks/Libraries', logoKey: 'angularjs' },
-    { name: 'Svelte', category: 'Frameworks/Libraries', logoKey: 'svelte' },
-    { name: 'Django', category: 'Frameworks/Libraries', logoKey: 'django' },
-    { name: 'Spring Boot', category: 'Frameworks/Libraries', logoKey: 'spring' },
-    { name: 'Flutter', category: 'Frameworks/Libraries', logoKey: 'flutter' },
-    { name: 'React Native', category: 'Frameworks/Libraries', logoKey: 'react' },
+  'ML & Data Science': [
+    { name: 'TensorFlow', category: 'ML & Data Science', logoKey: 'tensorflow' },
+    { name: 'PyTorch', category: 'ML & Data Science', logoKey: 'pytorch' },
+    { name: 'PyTorch Geometric', category: 'ML & Data Science', logoKey: 'pytorch' },
+    { name: 'Scikit-learn', category: 'ML & Data Science', logoKey: 'python' },
+    { name: 'Pandas', category: 'ML & Data Science', logoKey: 'pandas' },
+    { name: 'NumPy', category: 'ML & Data Science', logoKey: 'numpy' },
+    { name: 'Keras', category: 'ML & Data Science', logoKey: 'tensorflow' },
+    { name: 'XGBoost', category: 'ML & Data Science', logoKey: 'python' },
+    { name: 'LightGBM', category: 'ML & Data Science', logoKey: 'python' },
+    { name: 'OpenCV', category: 'ML & Data Science', logoKey: 'opencv' },
+    { name: 'Matplotlib', category: 'ML & Data Science', logoKey: 'python' },
+    { name: 'Seaborn', category: 'ML & Data Science', logoKey: 'python' },
+    { name: 'Plotly', category: 'ML & Data Science', logoKey: 'plotly' },
+    { name: 'Jupyter', category: 'ML & Data Science', logoKey: 'jupyter' },
+    { name: 'Optuna', category: 'ML & Data Science', logoKey: 'python' },
+    { name: 'UMAP', category: 'ML & Data Science', logoKey: 'python' },
+    { name: 'LSTM', category: 'ML & Data Science', logoKey: 'tensorflow' },
+    { name: 'Random Forest', category: 'ML & Data Science', logoKey: 'python' },
+    { name: 'Neural Networks', category: 'ML & Data Science', logoKey: 'tensorflow' },
+    { name: 'Deep Learning', category: 'ML & Data Science', logoKey: 'tensorflow' },
+    { name: 'Computer Vision', category: 'ML & Data Science', logoKey: 'opencv' },
+    { name: 'NLP', category: 'ML & Data Science', logoKey: 'python' },
+    { name: 'Time Series Analysis', category: 'ML & Data Science', logoKey: 'python' },
+    { name: 'Transfer Learning', category: 'ML & Data Science', logoKey: 'tensorflow' },
+    { name: 'Reinforcement Learning', category: 'ML & Data Science', logoKey: 'python' },
+    { name: 'Graph Neural Networks', category: 'ML & Data Science', logoKey: 'pytorch' },
+    { name: 'GANs', category: 'ML & Data Science', logoKey: 'tensorflow' },
+    { name: 'Word2Vec', category: 'ML & Data Science', logoKey: 'python' },
   ],
-  'ML/Data': [
-    { name: 'TensorFlow', category: 'ML/Data', logoKey: 'tensorflow' },
-    { name: 'PyTorch', category: 'ML/Data', logoKey: 'pytorch' },
-    { name: 'Supervised Learning', category: 'ML/Data', logoKey: 'python' },
-    { name: 'Deep Learning', category: 'ML/Data', logoKey: 'tensorflow' },
-    { name: 'Neural Networks', category: 'ML/Data', logoKey: 'python' },
-    { name: 'pandas', category: 'ML/Data', logoKey: 'pandas' },
-    { name: 'scikit-learn', category: 'ML/Data', logoKey: 'python' },
-    { name: 'Data Visualization', category: 'ML/Data', logoKey: 'jupyter' },
+  'Quantitative Finance': [
+    { name: 'Value at Risk (VaR)', category: 'Quantitative Finance', logoKey: 'python' },
+    { name: 'Conditional VaR (CVaR)', category: 'Quantitative Finance', logoKey: 'python' },
+    { name: 'Monte Carlo Simulation', category: 'Quantitative Finance', logoKey: 'python' },
+    { name: 'Alpha Generation', category: 'Quantitative Finance', logoKey: 'python' },
+    { name: 'Sharpe Ratio', category: 'Quantitative Finance', logoKey: 'python' },
+    { name: 'Risk Management', category: 'Quantitative Finance', logoKey: 'python' },
+    { name: 'Portfolio Optimization', category: 'Quantitative Finance', logoKey: 'python' },
+    { name: 'Backtesting', category: 'Quantitative Finance', logoKey: 'python' },
+    { name: 'High-Frequency Trading', category: 'Quantitative Finance', logoKey: 'python' },
+    { name: 'Algorithmic Trading', category: 'Quantitative Finance', logoKey: 'python' },
+    { name: 'Options Pricing', category: 'Quantitative Finance', logoKey: 'python' },
+    { name: 'Derivatives', category: 'Quantitative Finance', logoKey: 'python' },
+    { name: 'Statistical Arbitrage', category: 'Quantitative Finance', logoKey: 'python' },
+    { name: 'Factor Models', category: 'Quantitative Finance', logoKey: 'python' },
+    { name: 'Market Microstructure', category: 'Quantitative Finance', logoKey: 'python' },
+    { name: 'Volatility Modeling', category: 'Quantitative Finance', logoKey: 'python' },
   ],
-  'Blockchain/Web3': [
-    { name: 'Web3.js', category: 'Blockchain/Web3', logoKey: 'javascript' },
-    { name: 'Ethers.js', category: 'Blockchain/Web3', logoKey: 'ethereum' },
-    { name: 'IPFS', category: 'Blockchain/Web3', logoKey: 'ipfs' },
-    { name: 'Polygon', category: 'Blockchain/Web3', logoKey: 'polygon' },
-    { name: 'Ethereum', category: 'Blockchain/Web3', logoKey: 'ethereum' },
-    { name: 'Aptos', category: 'Blockchain/Web3', logoKey: 'aptos' },
-    { name: 'Move', category: 'Blockchain/Web3', logoKey: 'aptos' },
-    { name: 'Smart Contracts', category: 'Blockchain/Web3', logoKey: 'solidity' },
+  'Cloud & Infrastructure': [
+    // Cloud Platforms
+    { name: 'AWS', category: 'Cloud & Infrastructure', logoKey: 'amazonwebservices' },
+    { name: 'AWS EC2', category: 'Cloud & Infrastructure', logoKey: 'amazonwebservices' },
+    { name: 'AWS Lambda', category: 'Cloud & Infrastructure', logoKey: 'amazonwebservices' },
+    { name: 'AWS S3', category: 'Cloud & Infrastructure', logoKey: 'amazonwebservices' },
+    { name: 'AWS RDS', category: 'Cloud & Infrastructure', logoKey: 'amazonwebservices' },
+    { name: 'AWS CloudFormation', category: 'Cloud & Infrastructure', logoKey: 'amazonwebservices' },
+    { name: 'AWS CloudWatch', category: 'Cloud & Infrastructure', logoKey: 'amazonwebservices' },
+    { name: 'AWS ECS', category: 'Cloud & Infrastructure', logoKey: 'amazonwebservices' },
+    { name: 'GCP', category: 'Cloud & Infrastructure', logoKey: 'googlecloud' },
+    { name: 'Google Kubernetes Engine', category: 'Cloud & Infrastructure', logoKey: 'googlecloud' },
+    { name: 'Google Cloud Functions', category: 'Cloud & Infrastructure', logoKey: 'googlecloud' },
+    // DevOps & Infrastructure
+    { name: 'Docker', category: 'Cloud & Infrastructure', logoKey: 'docker' },
+    { name: 'Kubernetes', category: 'Cloud & Infrastructure', logoKey: 'kubernetes' },
+    { name: 'Terraform', category: 'Cloud & Infrastructure', logoKey: 'terraform' },
+    { name: 'GitHub Actions', category: 'Cloud & Infrastructure', logoKey: 'github' },
+    { name: 'Jenkins', category: 'Cloud & Infrastructure', logoKey: 'jenkins' },
+    { name: 'CI/CD', category: 'Cloud & Infrastructure', logoKey: 'github' },
+    { name: 'Prometheus', category: 'Cloud & Infrastructure', logoKey: 'prometheus' },
+    { name: 'Grafana', category: 'Cloud & Infrastructure', logoKey: 'grafana' },
+    { name: 'nginx', category: 'Cloud & Infrastructure', logoKey: 'nginx' },
+    { name: 'Apache', category: 'Cloud & Infrastructure', logoKey: 'apache' },
+    // Databases & Storage
+    { name: 'PostgreSQL', category: 'Cloud & Infrastructure', logoKey: 'postgresql' },
+    { name: 'MySQL', category: 'Cloud & Infrastructure', logoKey: 'mysql' },
+    { name: 'MongoDB', category: 'Cloud & Infrastructure', logoKey: 'mongodb' },
+    { name: 'Redis', category: 'Cloud & Infrastructure', logoKey: 'redis' },
+    { name: 'Firebase Firestore', category: 'Cloud & Infrastructure', logoKey: 'firebase' },
+    { name: 'NoSQL', category: 'Cloud & Infrastructure', logoKey: 'mongodb' },
+    { name: 'InfluxDB', category: 'Cloud & Infrastructure', logoKey: 'influxdb' },
+    { name: 'Elasticsearch', category: 'Cloud & Infrastructure', logoKey: 'elasticsearch' },
+    { name: 'Apache Cassandra', category: 'Cloud & Infrastructure', logoKey: 'apache' },
+    { name: 'DynamoDB', category: 'Cloud & Infrastructure', logoKey: 'amazonwebservices' },
+    { name: 'BigQuery', category: 'Cloud & Infrastructure', logoKey: 'googlecloud' }
   ],
-  'Cloud/DevOps': [
-    { name: 'AWS', category: 'Cloud/DevOps', logoKey: 'amazonwebservices' },
-    { name: 'GCP', category: 'Cloud/DevOps', logoKey: 'googlecloud' },
-    { name: 'Docker', category: 'Cloud/DevOps', logoKey: 'docker' },
-    { name: 'Kubernetes', category: 'Cloud/DevOps', logoKey: 'kubernetes' },
-    { name: 'Jenkins', category: 'Cloud/DevOps', logoKey: 'jenkins' },
-    { name: 'Firebase', category: 'Cloud/DevOps', logoKey: 'firebase' },
-    { name: 'MongoDB', category: 'Cloud/DevOps', logoKey: 'mongodb' },
-    { name: 'PostgreSQL', category: 'Cloud/DevOps', logoKey: 'postgresql' },
+  'System Architecture': [
+    { name: 'Microservices', category: 'System Architecture', logoKey: 'docker' },
+    { name: 'REST APIs', category: 'System Architecture', logoKey: 'swagger' },
+    { name: 'GraphQL', category: 'System Architecture', logoKey: 'graphql' },
+    { name: 'gRPC', category: 'System Architecture', logoKey: 'grpc' },
+    { name: 'Event-Driven Architecture', category: 'System Architecture', logoKey: 'apache' },
+    { name: 'Distributed Systems', category: 'System Architecture', logoKey: 'github' },
+    { name: 'Load Balancing', category: 'System Architecture', logoKey: 'nginx' },
+    { name: 'Caching Strategies', category: 'System Architecture', logoKey: 'redis' },
+    { name: 'Message Queues', category: 'System Architecture', logoKey: 'rabbitmq' },
+    { name: 'Pub/Sub', category: 'System Architecture', logoKey: 'apache' },
+    { name: 'Serverless', category: 'System Architecture', logoKey: 'amazonwebservices' },
+    { name: 'Service Mesh', category: 'System Architecture', logoKey: 'kubernetes' },
+    { name: 'API Gateway', category: 'System Architecture', logoKey: 'swagger' },
+    { name: 'SOLID Principles', category: 'System Architecture', logoKey: 'github' },
+    { name: 'Design Patterns', category: 'System Architecture', logoKey: 'github' },
+    { name: 'System Design', category: 'System Architecture', logoKey: 'github' },
+    { name: 'Scalability', category: 'System Architecture', logoKey: 'kubernetes' },
+    { name: 'High Availability', category: 'System Architecture', logoKey: 'kubernetes' },
   ],
-  'Concepts': [
-    { name: 'System Design', category: 'Concepts', logoKey: 'github' },
-    { name: 'Data Structures & Algorithms', category: 'Concepts', logoKey: 'github' },
-    { name: 'Distributed Systems', category: 'Concepts', logoKey: 'github' },
-    { name: 'API Design', category: 'Concepts', logoKey: 'swagger' },
-    { name: 'Microservices', category: 'Concepts', logoKey: 'docker' },
-    { name: 'Security', category: 'Concepts', logoKey: 'github' },
+  'Specialized Tools': [
+    // Streaming & Message Processing
+    { name: 'Apache Kafka', category: 'Specialized Tools', logoKey: 'apache' },
+    { name: 'Apache Flink', category: 'Specialized Tools', logoKey: 'apache' },
+    { name: 'RabbitMQ', category: 'Specialized Tools', logoKey: 'rabbitmq' },
+    // High-Performance Computing
+    { name: 'Intel TBB', category: 'Specialized Tools', logoKey: 'intel' },
+    { name: 'pybind11', category: 'Specialized Tools', logoKey: 'python' },
+    { name: 'OpenMP', category: 'Specialized Tools', logoKey: 'cplusplus' },
+    // Development Tools
+    { name: 'Git', category: 'Specialized Tools', logoKey: 'git' },
+    { name: 'GitHub', category: 'Specialized Tools', logoKey: 'github' },
+    { name: 'GitLab', category: 'Specialized Tools', logoKey: 'gitlab' },
+    { name: 'Jira', category: 'Specialized Tools', logoKey: 'jira' },
+    { name: 'Confluence', category: 'Specialized Tools', logoKey: 'confluence' },
+    { name: 'Slack', category: 'Specialized Tools', logoKey: 'slack' },
+    { name: 'VS Code', category: 'Specialized Tools', logoKey: 'visualstudiocode' },
+    { name: 'IntelliJ IDEA', category: 'Specialized Tools', logoKey: 'intellijidea' },
+    { name: 'Postman', category: 'Specialized Tools', logoKey: 'postman' },
+    { name: 'Swagger', category: 'Specialized Tools', logoKey: 'swagger' },
+    { name: 'QEMU', category: 'Specialized Tools', logoKey: 'qemu' },
+    { name: 'Vim', category: 'Specialized Tools', logoKey: 'vim' },
+    // Operating Systems
+    { name: 'Linux', category: 'Specialized Tools', logoKey: 'linux' },
+    { name: 'Ubuntu', category: 'Specialized Tools', logoKey: 'ubuntu' },
+    { name: 'macOS', category: 'Specialized Tools', logoKey: 'apple' }
   ],
 };
 
@@ -93,4 +184,16 @@ export const getAllSkills = () => {
 
 export const getCategories = () => {
   return Object.keys(skills) as SkillCategory[];
+};
+
+export const getSkillsByCategory = (category: SkillCategory) => {
+  return skills[category] || [];
+};
+
+export const getTotalSkillCount = () => {
+  return getAllSkills().length;
+};
+
+export const getCategorySkillCount = (category: SkillCategory) => {
+  return skills[category]?.length || 0;
 };

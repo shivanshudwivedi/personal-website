@@ -31,16 +31,16 @@ export default function AboutPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <h2 className="text-2xl font-bold mb-4">Who I Am</h2>
+            <h2 className="text-2xl font-bold mb-4">Who I Am ?</h2>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                I&apos;m Achyut Katiyar, a Full Stack Developer with a passion for creating innovative web applications and exploring blockchain technologies. I&apos;m currently pursuing a Master&apos;s in Computer Science at Northeastern University, where I continue to expand my knowledge and skills.
+                I&apos;m Shivanshu Dwivedi, a Product Builder with a passion for building highly-scalable products. I&apos;m currently pursuing a Bachelor&apos;s in Computer Science & Physics at Trinity College, where I continue to expand my knowledge and skills.
               </p>
               <p>
-                With expertise in Next.js, React, and various blockchain technologies, I enjoy building scalable and user-friendly applications that solve real-world problems. My background in computer science has given me a strong foundation in algorithms, data structures, and system design, which I apply to create efficient and maintainable code.
+                With expertise in Software Development, Machine Learning & Artifical Intelligence, I enjoy building scalable and user-friendly products that solve real-world problems. My background in computer science has given me a strong foundation in algorithms, data structures, and system design, which I apply to create efficient and maintainable code. My background in physics has given me a unique perspective on problem-solving and has sharpened my mathematical skills & data analysis abilities.
               </p>
               <p>
-                I&apos;m particularly interested in the intersection of web development and blockchain technology, where I&apos;ve developed several projects that leverage the power of decentralized systems to create secure and transparent applications.
+                I&apos;m particularly interested in the intersection of Software Development & Machine Learning, where I&apos;ve developed several projects that leverage the power of ML & AI to solve real-world problems through software.
               </p>
             </div>
 
@@ -104,37 +104,43 @@ export default function AboutPage() {
                   <li className="flex items-start">
                     <span className="text-primary mr-2 font-bold">•</span>
                     <span>
-                      Led University&apos;s Technical Team as Convener, increasing student engagement by 40% through committee formation and industry-aligned website redesigns.
+                      Next Genius Scholar (India) : Won Full-Tuition Scholarship by Next Genius Scholarship Program at Trinity College, Hartford worth $350,000+
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2 font-bold">•</span>
                     <span>
-                      Served as a Board Member of the APP Design and Development Club, mentoring newcomers and improving skills by 60%.
+                      Thomas Holland Scholar - Trinity College, Hartford : Won $2000 for being the 2nd highest GPA in Trinity College, Hartford.
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2 font-bold">•</span>
                     <span>
-                      Won $1500 Nillion Track Prize at Hacker House Goa 2024.
+                      Albert J. Howard - Best Junior in Physics Award : Won the Best Junior in Physics Award at Trinity College, Hartford
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2 font-bold">•</span>
                     <span>
-                      Awarded $600 at Move it with Aptos event.
+                      Deans Scholar - Trinity College, Hartford : Achieved the top 0.1% GPA at Trinity College
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2 font-bold">•</span>
                     <span>
-                      Received $500 Marbelism Track Prize at HACKSRM 2.0 2024.
+                      Phi Sigma Phi - Physics National Honors Society : Inducted as a member of the national society of Physics for commendable achievements in Physics.
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary mr-2 font-bold">•</span>
                     <span>
-                      Won $100 at APPATHON 2022.
+                      Phi Delta Gamma - Mathematics Award of Merit : Awarded for commendable achievements in Mathematics.
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2 font-bold">•</span>
+                    <span>
+                      WesHacks'24 - Won the best project award at the Wesleyan University's annual hackathon.
                     </span>
                   </li>
                 </ul>

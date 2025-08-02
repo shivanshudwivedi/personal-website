@@ -1,63 +1,83 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Trophy, Medal, Award, Code, Cpu, Gamepad, Zap, BookOpen } from "lucide-react";
+import { Trophy, Medal, Award, Code, Cpu, BookOpen, GraduationCap, Star, Brain, Calculator } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 interface Achievement {
   icon: React.ReactNode;
   title: string;
+  description: string;
   colorClass: string;
+  category: 'academic' | 'research' | 'leadership' | 'competition';
 }
 
 const achievements: Achievement[] = [
   {
     icon: <Trophy className="h-6 w-6" />,
-    title: "Winner of Hacker House, Goa ($1500 Prize)",
+    title: "Next Genius Scholar (India)",
+    description: "Won Full-Tuition Scholarship by Next Genius Scholarship Program at Trinity College, Hartford worth $350,000+",
     colorClass: "text-yellow-600 dark:text-yellow-400",
+    category: 'academic'
   },
   {
     icon: <Medal className="h-6 w-6" />,
-    title: "Winner of Move it with Aptos Hackathon ($600 Prize)",
+    title: "Thomas Holland Scholar",
+    description: "Won $2000 for being the 2nd highest GPA in Trinity College, Hartford",
     colorClass: "text-blue-600 dark:text-blue-400",
+    category: 'academic'
   },
   {
     icon: <Award className="h-6 w-6" />,
-    title: "Winner of HackSRM 5.0 ($500 Prize)",
+    title: "Albert J. Howard - Best Junior in Physics Award",
+    description: "Won the Best Junior in Physics Award at Trinity College, Hartford",
     colorClass: "text-green-600 dark:text-green-400",
+    category: 'academic'
+  },
+  {
+    icon: <Star className="h-6 w-6" />,
+    title: "Deans Scholar",
+    description: "Achieved the top 0.1% GPA at Trinity College, Hartford",
+    colorClass: "text-purple-600 dark:text-purple-400",
+    category: 'academic'
+  },
+  {
+    icon: <Brain className="h-6 w-6" />,
+    title: "Phi Sigma Phi - Physics National Honors Society",
+    description: "Inducted as a member of the national society of Physics for commendable achievements in Physics",
+    colorClass: "text-indigo-600 dark:text-indigo-400",
+    category: 'academic'
+  },
+  {
+    icon: <Calculator className="h-6 w-6" />,
+    title: "Phi Delta Gamma - Mathematics Award of Merit",
+    description: "Awarded for commendable achievements in Mathematics",
+    colorClass: "text-teal-600 dark:text-teal-400",
+    category: 'academic'
   },
   {
     icon: <Trophy className="h-6 w-6" />,
-    title: "Winner of Appthon 1.0",
-    colorClass: "text-purple-600 dark:text-purple-400",
-  },
-  {
-    icon: <BookOpen className="h-6 w-6" />,
-    title: "Convener of ADD (App Design & Development Club)",
-    colorClass: "text-indigo-600 dark:text-indigo-400",
-  },
-  {
-    icon: <Cpu className="h-6 w-6" />,
-    title: "DDoS Attack Detection Researcher",
+    title: "WesHacks'24 Winner",
+    description: "Won the best project award at the Wesleyan University's annual hackathon",
     colorClass: "text-red-600 dark:text-red-400",
-  },
-  {
-    icon: <Code className="h-6 w-6" />,
-    title: "Technical Convener of University Student Council",
-    colorClass: "text-teal-600 dark:text-teal-400",
-  },
-  {
-    icon: <Gamepad className="h-6 w-6" />,
-    title: "3x Valorant Tournament Champion",
-    colorClass: "text-amber-600 dark:text-amber-400",
-  },
-  {
-    icon: <Zap className="h-6 w-6" />,
-    title: "Technical Executive of Infinitus (National Level Fest)",
-    colorClass: "text-cyan-600 dark:text-cyan-400",
-  },
+    category: 'competition'
+  }
 ];
+
+const categoryColors = {
+  academic: "bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300",
+  research: "bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300",
+  leadership: "bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300",
+  competition: "bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-300"
+};
+
+const categoryLabels = {
+  academic: "Academic Excellence",
+  research: "Research",
+  leadership: "Leadership",
+  competition: "Competitions"
+};
 
 export function Achievements() {
   return (
@@ -69,14 +89,14 @@ export function Achievements() {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            Achievements
+            Achievements & Recognition
           </h2>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mt-4">
-            Recognition and milestones from my technical journey
+            Academic excellence, research contributions, and competitive achievements
           </p>
         </motion.div>
         
-        <div className="mt-12 flex flex-wrap gap-4 justify-center">
+        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {achievements.map((achievement, index) => (
             <motion.div 
               key={index}
@@ -89,15 +109,27 @@ export function Achievements() {
                 stiffness: 100,
                 damping: 15
               }}
-              className="w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-0.75rem)]"
             >
-              <Card className="h-full border-2 hover:border-primary transition-all duration-300">
-                <CardContent className="p-4 flex items-center gap-3">
-                  <div className={`${achievement.colorClass} shrink-0`}>
-                    {achievement.icon}
-                  </div>
-                  <div className="text-left">
-                    <p className="font-medium">{achievement.title}</p>
+              <Card className="h-full border-2 hover:border-primary transition-all duration-300 hover:shadow-lg">
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-4">
+                    <div className={`${achievement.colorClass} shrink-0 p-2 rounded-lg bg-muted/50`}>
+                      {achievement.icon}
+                    </div>
+                    <div className="text-left flex-1">
+                      <div className="flex items-center gap-2 mb-2">
+                        <h3 className="font-bold text-lg leading-tight">{achievement.title}</h3>
+                      </div>
+                      <Badge 
+                        variant="secondary" 
+                        className={`mb-3 text-xs ${categoryColors[achievement.category]}`}
+                      >
+                        {categoryLabels[achievement.category]}
+                      </Badge>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        {achievement.description}
+                      </p>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -105,11 +137,12 @@ export function Achievements() {
           ))}
         </div>
         
-        <div className="mt-10 inline-flex flex-wrap justify-center gap-2">
-          <Badge variant="secondary" className="text-sm py-1.5 px-3">Technical Leadership</Badge>
-          <Badge variant="secondary" className="text-sm py-1.5 px-3">Hackathon Winner</Badge>
-          <Badge variant="secondary" className="text-sm py-1.5 px-3">Research</Badge>
-          <Badge variant="secondary" className="text-sm py-1.5 px-3">Gaming</Badge>
+        <div className="mt-12 inline-flex flex-wrap justify-center gap-2">
+          <Badge variant="secondary" className="text-sm py-2 px-4">$350K+ Scholarship Winner</Badge>
+          <Badge variant="secondary" className="text-sm py-2 px-4">Top 0.1% GPA</Badge>
+          <Badge variant="secondary" className="text-sm py-2 px-4">Physics & Math Honors</Badge>
+          <Badge variant="secondary" className="text-sm py-2 px-4">Hackathon Champion</Badge>
+          <Badge variant="secondary" className="text-sm py-2 px-4">National Honor Societies</Badge>
         </div>
       </div>
     </section>

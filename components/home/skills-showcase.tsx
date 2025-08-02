@@ -9,7 +9,7 @@ import { skills, SkillCategory } from "@/data/skills";
 
 
 export function SkillsShowcase() {
-  const [selectedCategory, setSelectedCategory] = useState<SkillCategory>("Languages");
+  const [selectedCategory, setSelectedCategory] = useState<SkillCategory>("Programming & Development");
   const categories = Object.keys(skills) as SkillCategory[];
 
   return (
@@ -26,7 +26,7 @@ export function SkillsShowcase() {
             Technical Skills
           </h2>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-            My expertise across various technologies and tools
+            Always open to learning something new. Here&apos;s my expertise across various technologies and tools: 
           </p>
         </motion.div>
 
